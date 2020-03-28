@@ -97,14 +97,14 @@ export default props => {
               <p>
                 European COVID-19 statistics are for the 5 most populated
                 regions only (Germany, France, UK, Italy and Spain). Per capita
-                calculation based on population data from{" "}
+                calculation based on the 2020 population data from{" "}
                 <a href="https://www.worldometers.info/world-population/population-by-country/">
                   Worldometer
                 </a>
                 .
               </p>
               <p>
-                Economic statistics are based on the performance YTD of the{" "}
+                Economic statistics are based on the year-to-date performance of the{" "}
                 {marketData.countries.china.index},{" "}
                 {marketData.countries.europe.index} and{" "}
                 {marketData.countries.us.index} (updated {marketData.updated}).
