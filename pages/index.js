@@ -7,7 +7,7 @@ export default () => {
     <Wrapper
       url="/"
       title="The Cost of COVID-19"
-      description="Tracking the cost of COVID-19 across China, Europe and the United States in human lives and to their economies."
+      description="Tracking the cost of COVID-19 across China, Europe and the United States in human lives and economies."
     >
       <Home />
     </Wrapper>

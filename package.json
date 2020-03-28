@@ -1,6 +1,6 @@
 {
   "name": "covidcost",
-  "description": "Tracking the cost of COVID-19 across China, Europe and the United States in human lives and to their economies.",
+  "description": "Tracking the cost of COVID-19 across China, Europe and the United States in human lives and economies.",
   "version": "1.0.0",
   "scripts": {
     "cypress": "cypress open",
