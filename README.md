@@ -6,4 +6,4 @@ Economic statistics are based on the year-to-date performance of the Shanghai St
 
 --
 
-*Customized from [Project Starter](https://github.com/johnpolacek/project-starter)*
+_Customized from [Project Starter](https://github.com/johnpolacek/project-starter)_
