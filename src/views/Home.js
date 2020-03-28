@@ -33,7 +33,7 @@ export default props => {
           <>
             <Section>
               <Heading>...in human lives</Heading>
-              <Stat number={data.totalLives} label="Global" fontSize={[8,9]} />
+              <Stat number={data.totalLives} label="Global" fontSize={[8, 9]} />
               <StatRow>
                 {Object.keys(data.areas).map(area => (
                   <Stat
@@ -106,8 +106,8 @@ export default props => {
                 .
               </p>
               <p>
-                Economic statistics are based on the year-to-date performance of the{" "}
-                {marketData.countries.china.index},{" "}
+                Economic statistics are based on the year-to-date performance of
+                the {marketData.countries.china.index},{" "}
                 {marketData.countries.europe.index} and{" "}
                 {marketData.countries.us.index} (updated {marketData.updated}).
               </p>
