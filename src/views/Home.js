@@ -33,7 +33,7 @@ export default props => {
           <>
             <Section>
               <Heading>...in human lives</Heading>
-              <Stat number={data.totalLives} label="Global" fontSize={9} />
+              <Stat number={data.totalLives} label="Global" fontSize={[8,9]} />
               <StatRow>
                 {Object.keys(data.areas).map(area => (
                   <Stat
@@ -42,6 +42,8 @@ export default props => {
                   />
                 ))}
               </StatRow>
+            </Section>
+            <Section>
               <Heading>
                 ...per capita <br />
                 <small sx={{ fontSize: 2 }}>(deaths per million)</small>
@@ -57,7 +59,7 @@ export default props => {
                 ))}
               </StatRow>
             </Section>
-            <Section sx={{ pb: 5 }}>
+            <Section>
               <Heading>...and to the economy.</Heading>
               <StatRow>
                 {Object.keys(data.areas).map(area => (

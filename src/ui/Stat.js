@@ -18,7 +18,6 @@ const Stat = props => (
 Stat.propTypes = {
   label: PropTypes.string.isRequired,
   number: PropTypes.number.isRequired,
-  fontSize: PropTypes.number,
 }
 
 export default Stat
