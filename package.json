@@ -22,8 +22,6 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-vis": "^1.11.7",
-    "swr": "^0.1.18",
     "theme-ui": "^0.3.1"
   },
   "devDependencies": {
