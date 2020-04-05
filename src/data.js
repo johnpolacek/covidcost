@@ -1,8 +1,9 @@
 const toCountryData = json => {
+  console.log('toCountryData', json)
   let d = { totalLives: 0, areas: { europe: { TotalDeaths: 0 } } }
   json.Countries.forEach(country => {
     d.totalLives += country.TotalDeaths
-    if (country.Slug === "us") {
+    if (country.Slug === "united-states") {
       d.areas.us = country
     }
     if (country.Slug === "china") {
