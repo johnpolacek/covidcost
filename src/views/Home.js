@@ -15,6 +15,7 @@ export default props => {
     fetch("https://api.covid19api.com/summary")
       .then(response => {
         if (!response.ok) {
+          console.log(response.json())
           throw Error(response.json())
         }
         return response.json()
@@ -34,10 +35,16 @@ export default props => {
           <>
             <Section>
               <Heading>...in human lives</Heading>
-              <Stat number={data.totalLives} label="Global" fontSize={[8, 9]} />
+              <Stat
+                key="livesGlobal"
+                number={data.totalLives}
+                label="Global"
+                fontSize={[8, 9]}
+              />
               <StatRow>
                 {Object.keys(data.areas).map(area => (
                   <Stat
+                    key={"lives" + area}
                     number={data.areas[area].TotalDeaths}
                     label={area === "europe" ? "europe*" : area}
                   />
@@ -52,6 +59,7 @@ export default props => {
               <StatRow>
                 {Object.keys(data.areas).map(area => (
                   <Stat
+                    key={"capita" + area}
                     number={parseFloat(
                       data.areas[area].TotalDeaths / populationData[area]
                     ).toFixed(2)}
@@ -65,6 +73,7 @@ export default props => {
               <StatRow>
                 {Object.keys(data.areas).map(area => (
                   <Stat
+                    key={"economy" + area}
                     number={(
                       ((marketData.countries[area].current -
                         marketData.countries[area].start) /

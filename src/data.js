@@ -1,5 +1,4 @@
 const toCountryData = json => {
-  console.log('toCountryData', json)
   let d = { totalLives: 0, areas: { europe: { TotalDeaths: 0 } } }
   json.Countries.forEach(country => {
     d.totalLives += country.TotalDeaths
@@ -43,24 +42,24 @@ const marketData = {
   countries: {
     china: {
       start: 3085.2,
-      current: 2764,
+      current: 2860.08,
       index: "Shanghai Stock Exchange (SSE) Composite Index",
       link: "https://www.google.com/search?q=SHA:+000001",
     },
     us: {
       start: 28868.8,
-      current: 21053,
+      current: 23723.69,
       index: "Dow Jones Industrial Average",
       link: "https://www.google.com/search?q=dow+jones",
     },
     europe: {
       start: 1158.26,
-      current: 820,
+      current: 899.87,
       index: "Euronext 100 Index",
       link: "https://www.google.com/search?q=INDEXEURO:+N100",
     },
   },
-  updated: "4/4/2020",
+  updated: "5/3/2020",
 }
 
 module.exports = {

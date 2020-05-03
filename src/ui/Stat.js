@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import PropTypes from "prop-types"
 import React from "react"
 
 const formatNumber = num =>
@@ -9,21 +8,24 @@ const formatNumber = num =>
     .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
     .split(",")
     .map((n, i, arr) => (
-      <>
+      <span key={"num" + i}>
         {n.split(".").map((num, i, arr) => (
-          <>
+          <span key={"num_" + i}>
             <span>{num}</span>
             {i === 0 && arr.length > 1 && (
               <span sx={{ fontSize: "75%", mx: "-2px" }}>.</span>
             )}
-          </>
+          </span>
         ))}
         {i !== arr.length - 1 && (
-          <span sx={{ fontSize: "75%", fontFamily: "Arial", mx: "-2px" }}>
+          <span
+            key={"num_" + i}
+            sx={{ fontSize: "75%", fontFamily: "Arial", mx: "-2px" }}
+          >
             ,
           </span>
         )}
-      </>
+      </span>
     ))
 
 const Stat = props => (
@@ -35,10 +37,5 @@ const Stat = props => (
     <div sx={{ fontSize: 1, textTransform: "uppercase" }}>{props.label}</div>
   </div>
 )
-
-Stat.propTypes = {
-  label: PropTypes.string.isRequired,
-  number: PropTypes.number.isRequired,
-}
 
 export default Stat
