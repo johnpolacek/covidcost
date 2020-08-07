@@ -42,24 +42,24 @@ const marketData = {
   countries: {
     china: {
       start: 3085.2,
-      current: 2860.08,
+      current: 3354.04,
       index: "Shanghai Stock Exchange (SSE) Composite Index",
       link: "https://www.google.com/search?q=SHA:+000001",
     },
     us: {
       start: 28868.8,
-      current: 23723.69,
+      current: 27433.48,
       index: "Dow Jones Industrial Average",
       link: "https://www.google.com/search?q=dow+jones",
     },
     europe: {
       start: 1158.26,
-      current: 899.87,
+      current: 927.95,
       index: "Euronext 100 Index",
       link: "https://www.google.com/search?q=INDEXEURO:+N100",
     },
   },
-  updated: "5/3/2020",
+  updated: "8/7/2020",
 }
 
 module.exports = {
