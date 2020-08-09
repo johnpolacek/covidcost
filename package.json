@@ -2,6 +2,8 @@
   "name": "covidcost",
   "description": "Tracking the cost of COVID-19 across China, Europe and the United States in human lives and economies.",
   "version": "1.0.0",
+  "repository": "https://github.com/johnpolacek/covidcost",
+  "licence": "MIT",
   "scripts": {
     "cypress": "cypress open",
     "dev": "next",
